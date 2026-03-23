@@ -591,11 +591,25 @@ body {
     width: 100%;
 }
 
+.skill-group {
+    margin: 0 7px 14px;
+}
+
+.skill-group-title {
+    color: #fff;
+    font-family: "b", "a", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    margin: 8px 0 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+}
+
 .skill-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin: 7px;
+    margin: 0;
 }
 
 .skill-btn {
@@ -736,8 +750,18 @@ footer {
         padding: 0;
     }
 
+    .skill-group {
+        margin: 0 9px 12px;
+    }
+
+    .skill-group-title {
+        font-size: 13px;
+        margin: 7px 0;
+        padding-bottom: 5px;
+    }
+
     .skill-grid {
-        margin: 9px;
+        margin: 0;
     }
 
     .skill-btn {
