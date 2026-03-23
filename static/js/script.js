@@ -129,19 +129,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     var Checkbox = document.getElementById('myonoffswitch')
-    Checkbox.addEventListener('change', function () {
-        if (themeState == "Dark") {
-            changeTheme("Light");
-        } else if (themeState == "Light") {
-            changeTheme("Dark");
-        } else {
-            changeTheme("Dark");
-        }
-    });
+    if (Checkbox) {
+        Checkbox.addEventListener('change', function () {
+            if (themeState == "Dark") {
+                changeTheme("Light");
+            } else if (themeState == "Light") {
+                changeTheme("Dark");
+            } else {
+                changeTheme("Dark");
+            }
+        });
+    }
 
 
 
-    if (themeState == "Dark") {
+    if (Checkbox && themeState == "Dark") {
         Checkbox.checked = false;
     }
 
